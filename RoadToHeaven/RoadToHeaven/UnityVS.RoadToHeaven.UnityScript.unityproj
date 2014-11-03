@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F9AB22F-4105-A213-9DB4-A95B919F3FD5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>Assembly-UnityScript</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{84365F2C-1DDE-431A-8C14-179ADC971E4D};{1FAC5C55-277D-4884-94A4-83DBDAF57E56}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_2_1;UNITY_4_2;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_2_1;UNITY_4_2;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="RAINIndie">
+      <HintPath>Assets\ImportedPackages\RAIN\RAINIndie.dll</HintPath>
+    </Reference>
+    <Reference Include="Recast">
+      <HintPath>Assets\ImportedPackages\RAIN\Recast.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\AI\Actions\BasicMeleeSetup.js" />
+    <Compile Include="Assets\AI\Actions\EnemyChasing.js" />
+    <Compile Include="Assets\AI\Actions\EnemyPatrol.js" />
+    <Compile Include="Assets\AI\Actions\EnemySearching.js" />
+    <Compile Include="Assets\Art\GUI\Necromancer GUI\GUITestScript.js" />
+    <Compile Include="Assets\ImportedPackages\Standard Assets\Particles\Legacy Particles\TimedObjectDestructor.js" />
+    <Compile Include="Assets\Scripts\General\GameController.js" />
+    <Compile Include="Assets\Scripts\General\Player\PlayerController.js" />
+    <Compile Include="Assets\Scripts\General\Player\PlayerPawn.js" />
+    <Compile Include="Assets\Scripts\General\Player\PlayerPowers.js" />
+    <Compile Include="Assets\Scripts\General\Player\PowerSystem.js" />
+    <Compile Include="Assets\Scripts\General\Player\TraitSystem.js" />
+    <Compile Include="Assets\Scripts\General\Player\Weapons\Fire.js" />
+    <Compile Include="Assets\Scripts\General\Player\Weapons\Rocket.js" />
+    <Compile Include="Assets\Scripts\General\TraitND.js" />
+    <Compile Include="Assets\Scripts\General\WorldVars.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\Enemies\EnemyFodder.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\Enemies\SoulToPlayer.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\General\DisplayHUD.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\General\SpawnChecker.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\General\Spawner.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\General\UnlockSpawn2.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\General\UnlockSpawn3.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\General\UnlockSpawn4.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\General\UnlockSpawn5.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\Main Menu\MainMenu.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\Purgatory\AngelStore.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\Purgatory\AStoreND.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\Purgatory\DemonStore.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\Purgatory\DStoreND.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\Purgatory\EnableStore.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\Purgatory\GunStore.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\Purgatory\GunStoreInfo.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\Purgatory\HUD.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\Purgatory\Teleporter.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\Purgatory\TimeStore.js" />
+    <Compile Include="Assets\Scripts\LevelSpecific\World Map\WorldMap.js" />
+    <Compile Include="Assets\Scripts\misc\AutoDestroy.js" />
+    <Compile Include="Assets\Scripts\misc\DestroyOnInvisible.js" />
+    <Compile Include="Assets\Scripts\misc\FPS_Counter.js" />
+    <Compile Include="Assets\Scripts\misc\MouseLook.js" />
+    <Compile Include="Assets\Scripts\misc\TimerRawSeconds.js" />
+    <Compile Include="Assets\Scripts\TestCode.js" />
+    <None Include="Assets\AI\Resources\BehaviorTrees\BasicMelee.xml" />
+    <None Include="Assets\Art\GUI\Necromancer GUI\Kingthings.txt" />
+    <None Include="Assets\Art\GUI\Necromancer GUI\Readme.txt" />
+    <None Include="Assets\Art\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+    <None Include="Assets\Art\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+    <None Include="Assets\Art\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+    <None Include="Assets\Art\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+    <None Include="Assets\ImportedPackages\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
+    <None Include="Assets\ImportedPackages\RAIN\releasenotes.txt" />
+    <None Include="Assets\ImportedPackages\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+    <None Include="Assets\ImportedPackages\Standard Assets\Skyboxes\_skybox info.txt" />
+    <None Include="Assets\ImportedPackages\Standard Assets\Skyboxes\sky5X\README.txt" />
+    <None Include="Assets\Prefabs\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+    <None Include="Assets\ImportedPackages\RAIN\RAINIndie.dll" />
+    <None Include="Assets\ImportedPackages\RAIN\Recast.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets" />
+    <Folder Include="Assets\AI" />
+    <Folder Include="Assets\AI\Actions" />
+    <Folder Include="Assets\AI\Resources" />
+    <Folder Include="Assets\AI\Resources\BehaviorTrees" />
+    <Folder Include="Assets\Art" />
+    <Folder Include="Assets\Art\GUI" />
+    <Folder Include="Assets\Art\GUI\Necromancer GUI" />
+    <Folder Include="Assets\Art\Toon Shading" />
+    <Folder Include="Assets\Art\Toon Shading\Sources" />
+    <Folder Include="Assets\Art\Toon Shading\Sources\Shaders" />
+    <Folder Include="Assets\ImportedPackages" />
+    <Folder Include="Assets\ImportedPackages\RAIN" />
+    <Folder Include="Assets\ImportedPackages\RAIN\Editor" />
+    <Folder Include="Assets\ImportedPackages\RAIN\Editor\ScriptTemplates" />
+    <Folder Include="Assets\ImportedPackages\Standard Assets" />
+    <Folder Include="Assets\ImportedPackages\Standard Assets\Particles" />
+    <Folder Include="Assets\ImportedPackages\Standard Assets\Particles\Legacy Particles" />
+    <Folder Include="Assets\ImportedPackages\Standard Assets\Particles\Sources" />
+    <Folder Include="Assets\ImportedPackages\Standard Assets\Particles\Sources\Shaders" />
+    <Folder Include="Assets\ImportedPackages\Standard Assets\Skyboxes" />
+    <Folder Include="Assets\ImportedPackages\Standard Assets\Skyboxes\sky5X" />
+    <Folder Include="Assets\Prefabs" />
+    <Folder Include="Assets\Prefabs\Standard Assets" />
+    <Folder Include="Assets\Prefabs\Standard Assets\Water (Basic)" />
+    <Folder Include="Assets\Prefabs\Standard Assets\Water (Basic)\Sources" />
+    <Folder Include="Assets\Prefabs\Standard Assets\Water (Basic)\Sources\Shaders" />
+    <Folder Include="Assets\Scripts" />
+    <Folder Include="Assets\Scripts\General" />
+    <Folder Include="Assets\Scripts\General\Player" />
+    <Folder Include="Assets\Scripts\General\Player\Weapons" />
+    <Folder Include="Assets\Scripts\LevelSpecific" />
+    <Folder Include="Assets\Scripts\LevelSpecific\Enemies" />
+    <Folder Include="Assets\Scripts\LevelSpecific\General" />
+    <Folder Include="Assets\Scripts\LevelSpecific\Main Menu" />
+    <Folder Include="Assets\Scripts\LevelSpecific\Purgatory" />
+    <Folder Include="Assets\Scripts\LevelSpecific\World Map" />
+    <Folder Include="Assets\Scripts\misc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2010\UnityVS.UnityScript.targets" />
+</Project>

@@ -1,0 +1,11 @@
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\RAINIndie.dll
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\Recast.dll
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\obj\Debug\UnityVS.RoadToHeaven.CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\obj\Debug\Assembly-CSharp.dll
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\obj\Debug\Assembly-CSharp.pdb

@@ -1,0 +1,2 @@
+var hasEnemy: boolean = false;
+

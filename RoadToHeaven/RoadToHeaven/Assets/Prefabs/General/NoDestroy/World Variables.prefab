@@ -1,0 +1,713 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400008}
+  - 114: {fileID: 11400006}
+  - 114: {fileID: 11400010}
+  m_Layer: 0
+  m_Name: World Variables
+  m_TagString: GameVars
+  m_Icon: {fileID: -1500306622, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87508b2a14aef714f9c456c9d00bf7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficultySetting: 0
+  spawnPos: 0
+  gameStarted: 0
+  isSavedGame: 0
+  currentPlayerTraits: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  maxPlayerHealth: 0
+  maxPlayerStamina: 0
+  forwardSpeed: 0
+  backwardSpeed: 0
+  sideSpeed: 0
+  jumpHeight: 0
+  aP1Ab: 0000000000000000000000000000000000000000
+  aP2Ab: 0000000000000000000000000000000000000000
+  aP3Ab: 0000000000000000000000000000000000000000
+  aP4Ab: 0000000000000000000000000000000000000000
+  aP5Ab: 0000000000000000000000000000000000000000
+  aP6Ab: 0000000000000000000000000000000000000000
+  aP7Ab: 0000000000000000000000000000000000000000
+  aP8Ab: 0000000000000000000000000000000000000000
+  aP9Ab: 0000000000000000000000000000000000000000
+  aP10Ab: 0000000000000000000000000000000000000000
+  dP1Ab: 0000000000000000000000000000000000000000
+  dP2Ab: 0000000000000000000000000000000000000000
+  dP3Ab: 0000000000000000000000000000000000000000
+  dP4Ab: 0000000000000000000000000000000000000000
+  dP5Ab: 0000000000000000000000000000000000000000
+  dP6Ab: 0000000000000000000000000000000000000000
+  dP7Ab: 0000000000000000000000000000000000000000
+  dP8Ab: 0000000000000000000000000000000000000000
+  dP9Ab: 0000000000000000000000000000000000000000
+  dP10Ab: 0000000000000000000000000000000000000000
+  storedPistolUpgrades: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  storedRifleUpgrades: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  storedShotgunUpgrades: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  storedRocketUpgrades: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  storedGeneralUpgrades: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  storedCurrentTime: {x: 0, y: 0, z: 0}
+  storedSouls: 0
+  storedScore: 0
+  hasPistol: 0
+  hasRifle: 0
+  hasShotgun: 0
+  hasRocket: 0
+  currentPistolAmmoTotal: 0
+  currentRifleAmmoTotal: 0
+  currentShotgunAmmoTotal: 0
+  currentRocketAmmoTotal: 0
+  currentPistolAmmoInClip: 0
+  currentRifleAmmoInClip: 0
+  currentShotgunAmmoInClip: 0
+  currentRocketAmmoInClip: 0
+  maxPistolAmmo: 0
+  maxRifleAmmo: 0
+  maxShotgunAmmo: 0
+  maxRocketAmmo: 0
+  maxPistolClipSize: 0
+  maxRifleClipSize: 0
+  maxShotgunClipSize: 0
+  maxRocketClipSize: 0
+  pistolFireRate: 0
+  rifleFireRate: 0
+  shotgunFireRate: 0
+  rocketFireRate: 0
+  pistolDamage: 0
+  rifleDamage: 0
+  shotgunDamage: 0
+  rocketDamage: 0
+  pistolWeaponRange: 0
+  rifleWeaponRange: 0
+  shotgunWeaponRange: 0
+  rocketBulletSpeed: 0
+  pistolReloadTime: 0
+  rifleReloadTime: 0
+  shotgunReloadTime: 0
+  rocketReloadTime: 0
+  red_Region1Unlock: 0
+  red_Region2Unlock: 0
+  red_Region3Unlock: 0
+  red_Region4Unlock: 0
+  red_Region5Unlock: 0
+  blue_Region1Unlock: 0
+  blue_Region2Unlock: 0
+  blue_Region3Unlock: 0
+  blue_Region4Unlock: 0
+  blue_Region5Unlock: 0
+  green_Region1Unlock: 0
+  green_Region2Unlock: 0
+  green_Region3Unlock: 0
+  green_Region4Unlock: 0
+  green_Region5Unlock: 0
+  yellow_Region1Unlock: 0
+  yellow_Region2Unlock: 0
+  yellow_Region3Unlock: 0
+  yellow_Region4Unlock: 0
+  yellow_Region5Unlock: 0
+  purple_Region1Unlock: 0
+  purple_Region2Unlock: 0
+  purple_Region3Unlock: 0
+  purple_Region4Unlock: 0
+  purple_Region5Unlock: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c8428ccd56129441b2367feffd66065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitNames:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  traitDescs:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7302aa64a3d519c45b7a1e2520653e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  demonPowerNames:
+  - Hell Flame
+  - Fiery Soul
+  - Eternal Damnation
+  - Generic Demon Power 4
+  - Generic Demon Power 5
+  - Generic Demon Power 6
+  - Generic Demon Power 7
+  - Generic Demon Power 8
+  - Generic Demon Power 9
+  - Generic Demon Power 10
+  demonPowerImgs:
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  ability1Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability1Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability2Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability2Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability3Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability3Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability4Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability4Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability5Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability5Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability6Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability6Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability7Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability7Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability8Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability8Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability9Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability9Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability10Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability10Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e8f4b5b14d9ee4bbf76c50ee2aceea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angelPowerNames:
+  - Thunderous Wrath
+  - Guardian Angel
+  - Mircaculous Summons
+  - Generic Angel Power 4
+  - Generic Angel Power 5
+  - Generic Angel Power 6
+  - Generic Angel Power 7
+  - Generic Angel Power 8
+  - Generic Angel Power 9
+  - Generic Angel Power 10
+  angelPowerImgs:
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  ability1Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability1Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability2Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability2Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability3Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability3Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability4Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability4Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability5Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability5Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability6Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability6Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability7Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability7Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability8Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability8Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability9Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability9Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability10Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability10Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d52cf7606ae98f4bacdff0661eb6cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pistolUpgradeNames:
+  - Random Pistol Upgrade 1
+  - Random Pistol Upgrade 2
+  - Random Pistol Upgrade 3
+  - Random Pistol Upgrade 4
+  - Random Pistol Upgrade 5
+  - Random Pistol Upgrade 6
+  - Random Pistol Upgrade 7
+  - Random Pistol Upgrade 8
+  - Random Pistol Upgrade 9
+  - Random Pistol Upgrade 10
+  pistolUpgradeDescs:
+  - Some Random Effect 1
+  - Some Random Effect 2
+  - Some Random Effect 3
+  - Some Random Effect 4
+  - Some Random Effect 5
+  - Some Random Effect 6
+  - Some Random Effect 7
+  - Some Random Effect 8
+  - Some Random Effect 9
+  - Some Random Effect 10
+  pistolUpgradeCosts:
+  - {x: 0, y: 2, z: 30}
+  - {x: 0, y: 5, z: 0}
+  - {x: 0, y: 7, z: 30}
+  - {x: 0, y: 10, z: 0}
+  - {x: 0, y: 2, z: 30}
+  rifleUpgradeNames:
+  - Random Rifle Upgrade 1
+  - Random Rifle Upgrade 2
+  - Random Rifle Upgrade 3
+  - Random Rifle Upgrade 4
+  - Random Rifle Upgrade 5
+  - Random Rifle Upgrade 6
+  - Random Rifle Upgrade 7
+  - Random Rifle Upgrade 8
+  - Random Rifle Upgrade 9
+  - Random Rifle Upgrade 10
+  rifleUpgradeDescs:
+  - Some Random Effect 1
+  - Some Random Effect 2
+  - Some Random Effect 3
+  - Some Random Effect 4
+  - Some Random Effect 5
+  - Some Random Effect 6
+  - Some Random Effect 7
+  - Some Random Effect 8
+  - Some Random Effect 9
+  - Some Random Effect 10
+  rifleUpgradeCosts:
+  - {x: 0, y: 2, z: 30}
+  - {x: 0, y: 5, z: 0}
+  - {x: 0, y: 7, z: 30}
+  - {x: 0, y: 10, z: 0}
+  - {x: 0, y: 2, z: 30}
+  shotgunUpgradeNames:
+  - Random Shotgun Upgrade 1
+  - Random Shotgun Upgrade 2
+  - Random Shotgun Upgrade 3
+  - Random Shotgun Upgrade 4
+  - Random Shotgun Upgrade 5
+  - Random Shotgun Upgrade 6
+  - Random Shotgun Upgrade 7
+  - Random Shotgun Upgrade 8
+  - Random Shotgun Upgrade 9
+  - Random Shotgun Upgrade 10
+  shotgunUpgradeDescs:
+  - Some Random Effect 1
+  - Some Random Effect 2
+  - Some Random Effect 3
+  - Some Random Effect 4
+  - Some Random Effect 5
+  - Some Random Effect 6
+  - Some Random Effect 7
+  - Some Random Effect 8
+  - Some Random Effect 9
+  - Some Random Effect 10
+  shotgunUpgradeCosts:
+  - {x: 0, y: 2, z: 30}
+  - {x: 0, y: 5, z: 0}
+  - {x: 0, y: 7, z: 30}
+  - {x: 0, y: 2, z: 30}
+  - {x: 0, y: 10, z: 0}
+  rocketUpgradeNames:
+  - Random Rocket Upgrade 1
+  - Random Rocket Upgrade 2
+  - Random Rocket Upgrade 3
+  - Random Rocket Upgrade 4
+  - Random Rocket Upgrade 5
+  - Random Rocket Upgrade 6
+  - Random Rocket Upgrade 7
+  - Random Rocket Upgrade 8
+  - Random Rocket Upgrade 9
+  - Random Rocket Upgrade 10
+  rocketUpgradeDescs:
+  - Some Random Effect 1
+  - Some Random Effect 2
+  - Some Random Effect 3
+  - Some Random Effect 4
+  - Some Random Effect 5
+  - Some Random Effect 6
+  - Some Random Effect 7
+  - Some Random Effect 8
+  - Some Random Effect 9
+  - Some Random Effect 10
+  rocketUpgradeCosts:
+  - {x: 0, y: 2, z: 30}
+  - {x: 0, y: 5, z: 0}
+  - {x: 0, y: 7, z: 30}
+  - {x: 0, y: 10, z: 0}
+  - {x: 0, y: 2, z: 30}
+  generalUpgradeNames:
+  - Random Upgrade 1
+  - Random Upgrade 2
+  - Random Upgrade 3
+  - Random Upgrade 4
+  - Random Upgrade 5
+  - Random Upgrade 6
+  - Random Upgrade 7
+  - Random Upgrade 8
+  - Random Upgrade 9
+  - Random Upgrade 10
+  generalUpgradeDescs:
+  - Some Random Effect 1
+  - Some Random Effect 2
+  - Some Random Effect 3
+  - Some Random Effect 4
+  - Some Random Effect 5
+  - Some Random Effect 6
+  - Some Random Effect 7
+  - Some Random Effect 8
+  - Some Random Effect 9
+  - Some Random Effect 10
+  generalUpgradeCosts:
+  - {x: 0, y: 2, z: 30}
+  - {x: 0, y: 5, z: 0}
+  - {x: 0, y: 7, z: 30}
+  - {x: 0, y: 10, z: 0}
+  - {x: 0, y: 6, z: 45}
+  - {x: 0, y: 3, z: 0}
+  - {x: 0, y: 4, z: 0}
+  - {x: 0, y: 12, z: 15}
+  - {x: 0, y: 4, z: 30}
+  - {x: 0, y: 15, z: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

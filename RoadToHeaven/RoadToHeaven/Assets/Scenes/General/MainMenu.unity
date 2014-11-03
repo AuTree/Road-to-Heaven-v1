@@ -1,0 +1,1164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+SceneSettings:
+  m_ObjectHideFlags: 0
+  m_PVSData: 
+  m_PVSObjectsArray: []
+  m_PVSPortalsArray: []
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: .25
+    backfaceThreshold: 100
+--- !u!104 &2
+RenderSettings:
+  m_Fog: 0
+  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: .00999999978
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: .5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 0}
+  m_ObjectHideFlags: 0
+--- !u!127 &3
+LevelGameManager:
+  m_ObjectHideFlags: 0
+--- !u!157 &4
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  m_LightProbes: {fileID: 0}
+  m_Lightmaps: []
+  m_LightmapsMode: 1
+  m_BakedColorSpace: 0
+  m_UseDualLightmapsInForward: 0
+  m_LightmapEditorSettings:
+    m_Resolution: 50
+    m_LastUsedResolution: 0
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_BounceBoost: 1
+    m_BounceIntensity: 1
+    m_SkyLightColor: {r: .860000014, g: .930000007, b: 1, a: 1}
+    m_SkyLightIntensity: 0
+    m_Quality: 0
+    m_Bounces: 1
+    m_FinalGatherRays: 1000
+    m_FinalGatherContrastThreshold: .0500000007
+    m_FinalGatherGradientThreshold: 0
+    m_FinalGatherInterpolationPoints: 15
+    m_AOAmount: 0
+    m_AOMaxDistance: .100000001
+    m_AOContrast: 1
+    m_LODSurfaceMappingDistance: 1
+    m_Padding: 0
+    m_TextureCompression: 0
+    m_LockAtlas: 0
+--- !u!196 &5
+NavMeshSettings:
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    agentRadius: .5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: .400000006
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    accuratePlacement: 0
+    minRegionArea: 2
+    widthInaccuracy: 16.666666
+    heightInaccuracy: 10
+  m_NavMesh: {fileID: 0}
+--- !u!1 &90999385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 087ce67e68981f54092ad56a1aa5cdda, type: 2}
+  m_PrefabInternal: {fileID: 1993580544}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 90999387}
+  - 114: {fileID: 90999386}
+  - 114: {fileID: 90999388}
+  - 114: {fileID: 90999389}
+  m_Layer: 0
+  m_Name: PlayerController
+  m_TagString: PlayerController
+  m_Icon: {fileID: -1203168336, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &90999386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 087ce67e68981f54092ad56a1aa5cdda,
+    type: 2}
+  m_PrefabInternal: {fileID: 1993580544}
+  m_GameObject: {fileID: 90999385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7707d70b00f297f4a8447c6e772172d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pawnPrefab: {fileID: 100004, guid: 08aed3469a5642d4f8dedd1f0ab5fbe5, type: 2}
+  pawnPrefabDead: {fileID: 100004, guid: b3105819a35673a4d9d3f48e071f271d, type: 2}
+  spawnPlayer: 0
+  mouseSensitivity: 5
+  disableMovement: 0
+--- !u!4 &90999387
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 087ce67e68981f54092ad56a1aa5cdda, type: 2}
+  m_PrefabInternal: {fileID: 1993580544}
+  m_GameObject: {fileID: 90999385}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &90999388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 087ce67e68981f54092ad56a1aa5cdda,
+    type: 2}
+  m_PrefabInternal: {fileID: 1993580544}
+  m_GameObject: {fileID: 90999385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b833667f3d5374595b487f872b1e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeTraits: 
+  modifiedForwardSpeed: 0
+  modifiedBackwardSpeed: 0
+  modifiedSideSpeed: 0
+  modifiedJumpHeight: 0
+  modifiedPistolCost: 0
+  modifiedRifleCost: 0
+  modifiedShotgunCost: 0
+  modifiedRocketCost: 0
+  modifiedGeneralCost: 0
+  canPawnJump: 0
+--- !u!114 &90999389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 087ce67e68981f54092ad56a1aa5cdda,
+    type: 2}
+  m_PrefabInternal: {fileID: 1993580544}
+  m_GameObject: {fileID: 90999385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753d51d66bd68194d84a5892bd3028d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activePowers: []
+  reservePowers:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  currentPower: 0
+  angelNames: []
+  demonNames: []
+  powerNames:
+  - Grid 1 Name
+  - Grid 2 Name
+  - Grid 3 Name
+  - Grid 4 Name
+  aPower1Ab: 
+  aPower2Ab: 
+  aPower3Ab: 
+  aPower4Ab: 
+  aPower5Ab: 
+  aPower6Ab: 
+  aPower7Ab: 
+  aPower8Ab: 
+  aPower9Ab: 
+  aPower10Ab: 
+  dPower1Ab: 
+  dPower2Ab: 
+  dPower3Ab: 
+  dPower4Ab: 
+  dPower5Ab: 
+  dPower6Ab: 
+  dPower7Ab: 
+  dPower8Ab: 
+  dPower9Ab: 
+  dPower10Ab: 
+--- !u!1001 &196862531
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400002, guid: 82e0e4057f583014bac5b78840fbe225, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 82e0e4057f583014bac5b78840fbe225, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 82e0e4057f583014bac5b78840fbe225, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 82e0e4057f583014bac5b78840fbe225, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 82e0e4057f583014bac5b78840fbe225, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 82e0e4057f583014bac5b78840fbe225, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 82e0e4057f583014bac5b78840fbe225, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 82e0e4057f583014bac5b78840fbe225, type: 2}
+  m_RootGameObject: {fileID: 367074600}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &245192880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 245192885}
+  - 20: {fileID: 245192884}
+  - 92: {fileID: 245192883}
+  - 81: {fileID: 245192881}
+  - 114: {fileID: 245192882}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &245192881
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245192880}
+  m_Enabled: 1
+--- !u!114 &245192882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245192880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c97859217be036442b59573178848ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instructionText: 
+  titleScreen: {fileID: 2800000, guid: dad430930cf67cc43a2e202451edecc4, type: 3}
+  padding: 15
+  newGameToggle: 0
+--- !u!92 &245192883
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245192880}
+  m_Enabled: 1
+--- !u!20 &245192884
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245192880}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 50
+  field of view: 45
+  orthographic: 0
+  orthographic size: 100
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_HDR: 0
+  m_OcclusionCulling: 1
+--- !u!4 &245192885
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245192880}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.363976955, z: -7.02110624}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &367074600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 82e0e4057f583014bac5b78840fbe225, type: 2}
+  m_PrefabInternal: {fileID: 196862531}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 367074603}
+  - 114: {fileID: 367074601}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &367074601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 82e0e4057f583014bac5b78840fbe225,
+    type: 2}
+  m_PrefabInternal: {fileID: 196862531}
+  m_GameObject: {fileID: 367074600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 718b4e5ee1237af409ab1d643a76fc0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTime: {x: 0, y: 0, z: 1}
+  calTime: 0
+  soulCounter: 0
+  score: 0
+  isPaused: 0
+  isInGame: 0
+--- !u!4 &367074603
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 82e0e4057f583014bac5b78840fbe225, type: 2}
+  m_PrefabInternal: {fileID: 196862531}
+  m_GameObject: {fileID: 367074600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1001 &781100733
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: ce2f6a99ffa91164ea4e2faed95578b3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ce2f6a99ffa91164ea4e2faed95578b3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ce2f6a99ffa91164ea4e2faed95578b3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ce2f6a99ffa91164ea4e2faed95578b3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ce2f6a99ffa91164ea4e2faed95578b3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ce2f6a99ffa91164ea4e2faed95578b3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ce2f6a99ffa91164ea4e2faed95578b3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ce2f6a99ffa91164ea4e2faed95578b3, type: 2}
+  m_RootGameObject: {fileID: 1827536154}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &1827536154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: ce2f6a99ffa91164ea4e2faed95578b3, type: 2}
+  m_PrefabInternal: {fileID: 781100733}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1827536156}
+  - 114: {fileID: 1827536155}
+  - 114: {fileID: 1827536157}
+  - 114: {fileID: 1827536159}
+  - 114: {fileID: 1827536160}
+  - 114: {fileID: 1827536158}
+  m_Layer: 0
+  m_Name: World Variables
+  m_TagString: GameVars
+  m_Icon: {fileID: -1500306622, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1827536155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: ce2f6a99ffa91164ea4e2faed95578b3,
+    type: 2}
+  m_PrefabInternal: {fileID: 781100733}
+  m_GameObject: {fileID: 1827536154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87508b2a14aef714f9c456c9d00bf7f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficultySetting: 0
+  spawnPos: 0
+  gameStarted: 0
+  isSavedGame: 0
+  currentPlayerTraits: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  maxPlayerHealth: 0
+  maxPlayerStamina: 0
+  forwardSpeed: 0
+  backwardSpeed: 0
+  sideSpeed: 0
+  jumpHeight: 0
+  aP1Ab: 0000000000000000000000000000000000000000
+  aP2Ab: 0000000000000000000000000000000000000000
+  aP3Ab: 0000000000000000000000000000000000000000
+  aP4Ab: 0000000000000000000000000000000000000000
+  aP5Ab: 0000000000000000000000000000000000000000
+  aP6Ab: 0000000000000000000000000000000000000000
+  aP7Ab: 0000000000000000000000000000000000000000
+  aP8Ab: 0000000000000000000000000000000000000000
+  aP9Ab: 0000000000000000000000000000000000000000
+  aP10Ab: 0000000000000000000000000000000000000000
+  dP1Ab: 0000000000000000000000000000000000000000
+  dP2Ab: 0000000000000000000000000000000000000000
+  dP3Ab: 0000000000000000000000000000000000000000
+  dP4Ab: 0000000000000000000000000000000000000000
+  dP5Ab: 0000000000000000000000000000000000000000
+  dP6Ab: 0000000000000000000000000000000000000000
+  dP7Ab: 0000000000000000000000000000000000000000
+  dP8Ab: 0000000000000000000000000000000000000000
+  dP9Ab: 0000000000000000000000000000000000000000
+  dP10Ab: 0000000000000000000000000000000000000000
+  storedPistolUpgrades: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  storedRifleUpgrades: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  storedShotgunUpgrades: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  storedRocketUpgrades: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  storedGeneralUpgrades: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  storedCurrentTime: {x: 0, y: 0, z: 0}
+  storedSouls: 0
+  storedScore: 0
+  hasPistol: 0
+  hasRifle: 0
+  hasShotgun: 0
+  hasRocket: 0
+  currentPistolAmmoTotal: 0
+  currentRifleAmmoTotal: 0
+  currentShotgunAmmoTotal: 0
+  currentRocketAmmoTotal: 0
+  currentPistolAmmoInClip: 0
+  currentRifleAmmoInClip: 0
+  currentShotgunAmmoInClip: 0
+  currentRocketAmmoInClip: 0
+  maxPistolAmmo: 0
+  maxRifleAmmo: 0
+  maxShotgunAmmo: 0
+  maxRocketAmmo: 0
+  maxPistolClipSize: 0
+  maxRifleClipSize: 0
+  maxShotgunClipSize: 0
+  maxRocketClipSize: 0
+  pistolFireRate: 0
+  rifleFireRate: 0
+  shotgunFireRate: 0
+  rocketFireRate: 0
+  pistolDamage: 0
+  rifleDamage: 0
+  shotgunDamage: 0
+  rocketDamage: 0
+  pistolWeaponRange: 0
+  rifleWeaponRange: 0
+  shotgunWeaponRange: 0
+  rocketBulletSpeed: 0
+  pistolReloadTime: 0
+  rifleReloadTime: 0
+  shotgunReloadTime: 0
+  rocketReloadTime: 0
+  red_Region1Unlock: 0
+  red_Region2Unlock: 0
+  red_Region3Unlock: 0
+  red_Region4Unlock: 0
+  red_Region5Unlock: 0
+  blue_Region1Unlock: 0
+  blue_Region2Unlock: 0
+  blue_Region3Unlock: 0
+  blue_Region4Unlock: 0
+  blue_Region5Unlock: 0
+  green_Region1Unlock: 0
+  green_Region2Unlock: 0
+  green_Region3Unlock: 0
+  green_Region4Unlock: 0
+  green_Region5Unlock: 0
+  yellow_Region1Unlock: 0
+  yellow_Region2Unlock: 0
+  yellow_Region3Unlock: 0
+  yellow_Region4Unlock: 0
+  yellow_Region5Unlock: 0
+  purple_Region1Unlock: 0
+  purple_Region2Unlock: 0
+  purple_Region3Unlock: 0
+  purple_Region4Unlock: 0
+  purple_Region5Unlock: 0
+--- !u!4 &1827536156
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: ce2f6a99ffa91164ea4e2faed95578b3, type: 2}
+  m_PrefabInternal: {fileID: 781100733}
+  m_GameObject: {fileID: 1827536154}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &1827536157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: ce2f6a99ffa91164ea4e2faed95578b3,
+    type: 2}
+  m_PrefabInternal: {fileID: 781100733}
+  m_GameObject: {fileID: 1827536154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c8428ccd56129441b2367feffd66065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traitNames:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  traitDescs:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+--- !u!114 &1827536158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400010, guid: ce2f6a99ffa91164ea4e2faed95578b3,
+    type: 2}
+  m_PrefabInternal: {fileID: 781100733}
+  m_GameObject: {fileID: 1827536154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d52cf7606ae98f4bacdff0661eb6cd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pistolUpgradeNames:
+  - Random Pistol Upgrade 1
+  - Random Pistol Upgrade 2
+  - Random Pistol Upgrade 3
+  - Random Pistol Upgrade 4
+  - Random Pistol Upgrade 5
+  - Random Pistol Upgrade 6
+  - Random Pistol Upgrade 7
+  - Random Pistol Upgrade 8
+  - Random Pistol Upgrade 9
+  - Random Pistol Upgrade 10
+  pistolUpgradeDescs:
+  - Some Random Effect 1
+  - Some Random Effect 2
+  - Some Random Effect 3
+  - Some Random Effect 4
+  - Some Random Effect 5
+  - Some Random Effect 6
+  - Some Random Effect 7
+  - Some Random Effect 8
+  - Some Random Effect 9
+  - Some Random Effect 10
+  pistolUpgradeCosts:
+  - {x: 0, y: 2, z: 30}
+  - {x: 0, y: 5, z: 0}
+  - {x: 0, y: 7, z: 30}
+  - {x: 0, y: 10, z: 0}
+  - {x: 0, y: 2, z: 30}
+  rifleUpgradeNames:
+  - Random Rifle Upgrade 1
+  - Random Rifle Upgrade 2
+  - Random Rifle Upgrade 3
+  - Random Rifle Upgrade 4
+  - Random Rifle Upgrade 5
+  - Random Rifle Upgrade 6
+  - Random Rifle Upgrade 7
+  - Random Rifle Upgrade 8
+  - Random Rifle Upgrade 9
+  - Random Rifle Upgrade 10
+  rifleUpgradeDescs:
+  - Some Random Effect 1
+  - Some Random Effect 2
+  - Some Random Effect 3
+  - Some Random Effect 4
+  - Some Random Effect 5
+  - Some Random Effect 6
+  - Some Random Effect 7
+  - Some Random Effect 8
+  - Some Random Effect 9
+  - Some Random Effect 10
+  rifleUpgradeCosts:
+  - {x: 0, y: 2, z: 30}
+  - {x: 0, y: 5, z: 0}
+  - {x: 0, y: 7, z: 30}
+  - {x: 0, y: 10, z: 0}
+  - {x: 0, y: 2, z: 30}
+  shotgunUpgradeNames:
+  - Random Shotgun Upgrade 1
+  - Random Shotgun Upgrade 2
+  - Random Shotgun Upgrade 3
+  - Random Shotgun Upgrade 4
+  - Random Shotgun Upgrade 5
+  - Random Shotgun Upgrade 6
+  - Random Shotgun Upgrade 7
+  - Random Shotgun Upgrade 8
+  - Random Shotgun Upgrade 9
+  - Random Shotgun Upgrade 10
+  shotgunUpgradeDescs:
+  - Some Random Effect 1
+  - Some Random Effect 2
+  - Some Random Effect 3
+  - Some Random Effect 4
+  - Some Random Effect 5
+  - Some Random Effect 6
+  - Some Random Effect 7
+  - Some Random Effect 8
+  - Some Random Effect 9
+  - Some Random Effect 10
+  shotgunUpgradeCosts:
+  - {x: 0, y: 2, z: 30}
+  - {x: 0, y: 5, z: 0}
+  - {x: 0, y: 7, z: 30}
+  - {x: 0, y: 2, z: 30}
+  - {x: 0, y: 10, z: 0}
+  rocketUpgradeNames:
+  - Random Rocket Upgrade 1
+  - Random Rocket Upgrade 2
+  - Random Rocket Upgrade 3
+  - Random Rocket Upgrade 4
+  - Random Rocket Upgrade 5
+  - Random Rocket Upgrade 6
+  - Random Rocket Upgrade 7
+  - Random Rocket Upgrade 8
+  - Random Rocket Upgrade 9
+  - Random Rocket Upgrade 10
+  rocketUpgradeDescs:
+  - Some Random Effect 1
+  - Some Random Effect 2
+  - Some Random Effect 3
+  - Some Random Effect 4
+  - Some Random Effect 5
+  - Some Random Effect 6
+  - Some Random Effect 7
+  - Some Random Effect 8
+  - Some Random Effect 9
+  - Some Random Effect 10
+  rocketUpgradeCosts:
+  - {x: 0, y: 2, z: 30}
+  - {x: 0, y: 5, z: 0}
+  - {x: 0, y: 7, z: 30}
+  - {x: 0, y: 10, z: 0}
+  - {x: 0, y: 2, z: 30}
+  generalUpgradeNames:
+  - Random Upgrade 1
+  - Random Upgrade 2
+  - Random Upgrade 3
+  - Random Upgrade 4
+  - Random Upgrade 5
+  - Random Upgrade 6
+  - Random Upgrade 7
+  - Random Upgrade 8
+  - Random Upgrade 9
+  - Random Upgrade 10
+  generalUpgradeDescs:
+  - Some Random Effect 1
+  - Some Random Effect 2
+  - Some Random Effect 3
+  - Some Random Effect 4
+  - Some Random Effect 5
+  - Some Random Effect 6
+  - Some Random Effect 7
+  - Some Random Effect 8
+  - Some Random Effect 9
+  - Some Random Effect 10
+  generalUpgradeCosts:
+  - {x: 0, y: 2, z: 30}
+  - {x: 0, y: 5, z: 0}
+  - {x: 0, y: 7, z: 30}
+  - {x: 0, y: 10, z: 0}
+  - {x: 0, y: 6, z: 45}
+  - {x: 0, y: 3, z: 0}
+  - {x: 0, y: 4, z: 0}
+  - {x: 0, y: 12, z: 15}
+  - {x: 0, y: 4, z: 30}
+  - {x: 0, y: 15, z: 0}
+--- !u!114 &1827536159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400008, guid: ce2f6a99ffa91164ea4e2faed95578b3,
+    type: 2}
+  m_PrefabInternal: {fileID: 781100733}
+  m_GameObject: {fileID: 1827536154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e8f4b5b14d9ee4bbf76c50ee2aceea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angelPowerNames:
+  - Thunderous Wrath
+  - Guardian Angel
+  - Mircaculous Summons
+  - Generic Angel Power 4
+  - Generic Angel Power 5
+  - Generic Angel Power 6
+  - Generic Angel Power 7
+  - Generic Angel Power 8
+  - Generic Angel Power 9
+  - Generic Angel Power 10
+  angelPowerImgs:
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  ability1Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability1Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability2Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability2Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability3Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability3Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability4Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability4Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability5Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability5Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability6Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability6Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability7Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability7Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability8Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability8Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability9Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability9Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability10Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability10Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+--- !u!114 &1827536160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: ce2f6a99ffa91164ea4e2faed95578b3,
+    type: 2}
+  m_PrefabInternal: {fileID: 781100733}
+  m_GameObject: {fileID: 1827536154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7302aa64a3d519c45b7a1e2520653e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  demonPowerNames:
+  - Hell Flame
+  - Fiery Soul
+  - Eternal Damnation
+  - Generic Demon Power 4
+  - Generic Demon Power 5
+  - Generic Demon Power 6
+  - Generic Demon Power 7
+  - Generic Demon Power 8
+  - Generic Demon Power 9
+  - Generic Demon Power 10
+  demonPowerImgs:
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  - {fileID: 2800000, guid: 536790841cfe828448084a5fa4479c8c, type: 3}
+  ability1Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability1Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability2Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability2Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability3Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability3Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability4Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability4Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability5Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability5Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability6Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability6Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability7Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability7Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability8Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability8Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability9Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability9Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+  ability10Names:
+  - Upgrade 1
+  - Upgrade 2
+  - Upgrade 3
+  - Upgrade 4
+  - Upgrade 5
+  ability10Descs:
+  - 'Blah, Blah, Blah: Upgrade 1 Desc'
+  - 'Blah, Blah, Blah: Upgrade 2 Desc'
+  - 'Blah, Blah, Blah: Upgrade 3 Desc'
+  - 'Blah, Blah, Blah: Upgrade 4 Desc'
+  - 'Blah, Blah, Blah: Upgrade 5 Desc'
+--- !u!1001 &1993580544
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 087ce67e68981f54092ad56a1aa5cdda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 087ce67e68981f54092ad56a1aa5cdda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 087ce67e68981f54092ad56a1aa5cdda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 087ce67e68981f54092ad56a1aa5cdda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 087ce67e68981f54092ad56a1aa5cdda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 087ce67e68981f54092ad56a1aa5cdda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 087ce67e68981f54092ad56a1aa5cdda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 087ce67e68981f54092ad56a1aa5cdda, type: 2}
+  m_RootGameObject: {fileID: 90999385}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1

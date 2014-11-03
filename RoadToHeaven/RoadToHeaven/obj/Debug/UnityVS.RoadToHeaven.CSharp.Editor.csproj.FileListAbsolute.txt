@@ -1,0 +1,16 @@
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\Assembly-CSharp-Editor.dll
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\Assembly-CSharp-Editor.pdb
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\RAINEditor.dll
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\RAINIndie.dll
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\Recast.dll
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\RecastEditor.dll
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\SyntaxTree.VisualStudio.Unity.Bridge.dll
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\SyntaxTree.VisualStudio.Unity.Messaging.dll
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\Assembly-UnityScript.pdb
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\obj\Debug\Assembly-CSharp-Editor.dll
+C:\Users\Derrell\Google Drive\GameFiles\ProjectFiles\RoadToHeaven\obj\Debug\Assembly-CSharp-Editor.pdb

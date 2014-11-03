@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400004}
+  m_Layer: 0
+  m_Name: PlayerController
+  m_TagString: PlayerController
+  m_Icon: {fileID: -1203168336, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7707d70b00f297f4a8447c6e772172d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pawnPrefab: {fileID: 100004, guid: 08aed3469a5642d4f8dedd1f0ab5fbe5, type: 2}
+  pawnPrefabDead: {fileID: 100004, guid: b3105819a35673a4d9d3f48e071f271d, type: 2}
+  spawnPlayer: 0
+  mouseSensitivity: 5
+  disableMovement: 0
+  needNewPawn: 1
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b833667f3d5374595b487f872b1e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeTraits: 
+  modifiedMaxHealth: 0
+  modifiedMaxStamina: 0
+  modifiedForwardSpeed: 0
+  modifiedBackwardSpeed: 0
+  modifiedSideSpeed: 0
+  modifiedJumpHeight: 0
+  modifiedRegenAmount: 0
+  modifiedRegenTimer: 0
+  modifiedPistolCost: 0
+  modifiedRifleCost: 0
+  modifiedShotgunCost: 0
+  modifiedRocketCost: 0
+  modifiedHealthCost: 0
+  modifiedStaminaCost: 0
+  modifiedGeneralCost: 0
+  canPawnJump: 0
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753d51d66bd68194d84a5892bd3028d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activePowers: []
+  currentPower: 0
+  angelNames: []
+  demonNames: []
+  powerNames:
+  - Grid 1 Name
+  - Grid 2 Name
+  - Grid 3 Name
+  - Grid 4 Name
+  aPower1Ab: 
+  aPower2Ab: 
+  aPower3Ab: 
+  aPower4Ab: 
+  aPower5Ab: 
+  aPower6Ab: 
+  aPower7Ab: 
+  aPower8Ab: 
+  aPower9Ab: 
+  aPower10Ab: 
+  dPower1Ab: 
+  dPower2Ab: 
+  dPower3Ab: 
+  dPower4Ab: 
+  dPower5Ab: 
+  dPower6Ab: 
+  dPower7Ab: 
+  dPower8Ab: 
+  dPower9Ab: 
+  dPower10Ab: 
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
